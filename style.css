@@ -1,88 +1,172 @@
-/* General reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body styling */
 body {
     font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
     color: #333;
+    padding: 20px;
 }
 
-/* Header styling */
+.button-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    transition: background 0.3s ease;
+}
+
+.button-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 4px; /* Height for the line */
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 100%);
+    transition: width 0.3s ease;
+}
+
+.button-link:hover::after {
+    width: 100%;
+}
+
+/* Header styles */
 header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 1rem;
+    background: linear-gradient(90deg, #333, #555);
+    color: #fff;
+    padding: 20px 0;
     text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
-    margin-bottom: 0.5rem;
+    margin: 0;
+    font-size: 2em;
+    letter-spacing: 1px;
 }
 
-header nav ul {
+nav ul {
     list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
-header nav ul li {
+nav ul li {
     display: inline;
-    margin: 0 10px;
 }
 
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-/* Main content styling */
+/* Main content styles */
 main {
-    padding: 2rem;
+    margin: 20px 0;
 }
 
-/* Section headers */
-h2 {
-    color: #4CAF50;
-    margin-bottom: 1rem;
+#projects {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-/* Resume page styling */
-.resume-section {
-    margin-bottom: 1.5rem;
-}
-
-/* Projects page styling */
 .project {
     display: flex;
-    align-items: center;
-    margin-bottom: 2rem;
+    flex-direction: row;
+    background: linear-gradient(to right, #0288a3, #fff);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .project.alternate {
-    flex-direction: row-reverse;
+    background: linear-gradient(to left, #0288a3, #fff);
 }
 
-.project-video video {
-    max-width: 100%;
-    height: auto;
+.project h3 {
+    margin-top: 0;
+}
+
+.project p {
+    margin: 10px 0 0;
+}
+
+.project-video {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.project.alternate .project-video {
+    margin-right: 20px;
+    margin-left: 0;
 }
 
 .project-description {
-    padding: 1rem;
-    max-width: 50%;
+    flex: 1;
 }
 
-.project-description h3 {
-    margin-bottom: 0.5rem;
+.project-video iframe {
+    border: 5px solid #ddd; /* Frame color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Footer styling */
+.project-video iframe:hover {
+    transform: scale(1.02); /* Slight zoom on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Footer styles */
 footer {
-    background-color: #333;
-    color: white;
+    background: #333;
+    color: #fff;
     text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-content h3 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-list li .email-text {
+    margin-top: 5px;
+    color: #fff;
+    font-size: 0.9em;
+    word-break: break-all; /* Ensures the email text wraps properly */
 }
