@@ -79,11 +79,13 @@ main {
 .project {
     display: flex;
     flex-direction: row;
+    align-items: center; /* Center content vertically */
     background: linear-gradient(to right, #0288a3, #fff);
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Add spacing between projects */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -98,6 +100,19 @@ main {
 
 .project h3 {
     margin-top: 0;
+    position: relative;
+    display: inline-block;
+    font-size: 2em; /* Increase the font size */
+}
+
+.project h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Adjust as needed */
+    width: 100px; /* Fixed width for the underline */
+    height: 2px; /* Adjust the height of the underline */
+    background-color: #333; /* Adjust the color of the underline */
 }
 
 .project p {
@@ -114,8 +129,35 @@ main {
     margin-left: 0;
 }
 
-.project-description {
-    flex: 1;
+.project.alternate .project-description {
+    margin-right: 20px; /* Add margin to separate from the video */
+}
+
+.project-description hr {
+    border: none;
+    border-top: 2px solid #333; /* Adjust the color to match the underline */
+    width: 50%; /* Fixed width to match the underline */
+    margin: 10px 0; /* Adjust the margin as needed */
+}
+
+.project-skills {
+    list-style: none;
+    padding: 10px; /* Add padding for better spacing */
+    margin: 20px 0 0; /* Add margin to create space between the description and the skills */
+    background-color: rgba(51, 51, 51, 0.5); /* Same color as the line with slight transparency */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border: 3px solid #333; /* Add a border to create a frame */
+}
+
+.project-skills li {
+    margin-bottom: 10px; /* Adjust the spacing between list items as needed */
+    color: #000; /* Set text color to white */
+}
+
+.project-skills li strong {
+    font-weight: bold;
+    color: #FFF; /* Add color to the skill titles */
 }
 
 .project-video iframe {
@@ -169,4 +211,43 @@ footer {
     color: #fff;
     font-size: 0.9em;
     word-break: break-all; /* Ensures the email text wraps properly */
+}
+
+/* Keyframes for sliding in from the left */
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Keyframes for sliding in from the right */
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Initial state for projects */
+.project, .project.alternate {
+    opacity: 0;
+}
+
+/* Animation for projects sliding in from the left */
+.project.slide-in-left {
+    animation: slideInLeft 1s forwards;
+}
+
+/* Animation for alternate projects sliding in from the right */
+.project.alternate.slide-in-right {
+    animation: slideInRight 1s forwards;
 }
