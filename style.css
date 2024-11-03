@@ -36,6 +36,7 @@ body {
     position: relative;
     overflow: hidden;
     transition: background 0.3s ease;
+    font-size: 1.2em; /* Increase the font size */
 }
 
 .button-link::after {
@@ -345,5 +346,24 @@ footer {
     .profile-description hr {
         width: 50px; /* Set the width of the horizontal line */
         margin: 10px auto; /* Center the line horizontally */
+    }
+
+    .project, .project.alternate {
+        flex-direction: column; /* Change flex direction to column */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .project-video {
+        margin-right: 0;
+        margin-bottom: 20px; /* Add margin below the video */
+    }
+
+    .project.alternate .project-video {
+        margin-left: 0;
+        margin-bottom: 20px; /* Add margin below the video */
+    }
+
+    .project-description {
+        width: 100%; /* Ensure the description takes full width */
     }
 }
