@@ -321,6 +321,12 @@ footer {
     animation: slideInRight 1s forwards;
 }
 
+@media (max-width: 768px) {
+    .project-video iframe {
+        width: 100%; /* Make the iframe take full width of its container */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
 
 @media (max-width: 1200px) {
     #profile {
