@@ -1,116 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfolio - DEL MEDICO Rémi</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    </head>
-<body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - DEL MEDICO Rémi</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
     <!-- Navigation -->
     <header>
-        <h1>Portfolio - DEL MEDICO Rémi</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="button-link">About me</a></li>
-                <li><a href="projects.html" class="button-link">Personal project</a></li>
-            </ul>
-        </nav>
+      <h1>Portfolio - DEL MEDICO Rémi</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="button-link">About me</a></li>
+          <li>
+            <a href="projects.html" class="button-link">Personal project</a>
+          </li>
+          <li><a href="resume.html" class="button-link">Resume</a></li>
+        </ul>
+      </nav>
     </header>
 
     <!-- Projects Content -->
     <main class="projects-main">
-        <section id="projects">
-            <div class="project">
-                <div class="project-video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/rdSWH_XKPg8?si=Dx66vgg8eQUqXsG8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                <div class="project-description">
-                    <h3>Doom Game Engine in Java</h3>
-                    <p>The Doom Game Engine in Java project is a custom-built, Java-based game engine that I developed, inspired by the original Doom games. This engine recreates the retro 3D experience through essential game engine functionalities, including 2D and 3D rendering, Binary Space Partitioning (BSP) for optimized scene management, and basic player movement within a simulated 3D space from the 2D map. Built using JDK 21. Future expansions for the project could include features such as a map editor, AI-driven monsters, and a save/load functionality to enhance user experience. This project exemplifies core game development principles, from rendering to spatial partitioning, that I designed from the ground up.</p>
-                    <ul class="project-skills">
-                        <li><strong>Java Programming (JDK 21 / OOP):</strong> Utilized to build the entire engine and manage game logic.</li>
-                        <li><strong>2D and 3D Rendering:</strong> Implemented custom rendering techniques to emulate retro 3D visuals.</li>
-                        <li><strong>Binary Space Partitioning (BSP):</strong> Applied for efficient scene management and spatial optimization.</li>
-                        <li><strong>Game Physics and Movement:</strong> Developed basic player movement within a 3D-like environment from a 2D map.</li>
-                        <li><strong>Data Structures and Algorithms:</strong> Leveraged for optimal rendering performance.</li>
-                    </ul>
-                </div>
-            </div>
-        
-            <div class="project alternate">
-                <div class="project-description">
-                    <h3>Blockudoku-AI</h3>
-                    <p>The Blockudoku-AI project is replication of the popular Blockudoku mobile game with a little twist, featuring an AI-driven player that makes strategic moves based on custom scoring rules. I recreated the Blockudoku game in Java and developed a rule-based AI to play the game autonomously. This AI isn't trained using machine learning but instead evaluates each possible move based on carefully designed scoring criteria, such as piece adjacency, connectivity to other pieces or walls, and alignment with horizontal, vertical, or 3x3 grid patterns. Built with Processing, this project demonstrates skills in game development, rule-based AI design, and algorithmic scoring. Future updates may include enhanced rule complexity and adaptive scoring for improved AI performance.</p>
-                    <ul class="project-skills">
-                        <li><strong>Java Programming (Processing):</strong> Developed the simulation with Java on Processing.</li>
-                        <li><strong>Rule-Based AI System:</strong> Designed an AI that evaluates each move based on pre-defined scoring rules, allowing it to play autonomously.</li>
-                        <li><strong>Algorithmic Scoring and Decision-Making:</strong> Applied scoring logic that considers piece connectivity, grid alignment, and optimal move selection.</li>
-                        <li><strong>Game Development:</strong> Built the Blockudoku game mechanics, ensuring an authentic replication of the mobile experience.</li>
-                    </ul>
-                </div>
-                <div class="project-video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/JfBY5MMdbb4?si=jRM8AQQxNYS4drdR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
-        
-            <div class="project">
-                <div class="project-video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/75ZgIOZ5zE4?si=iEwqQlAYV1r3nP0f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                <div class="project-description">
-                    <h3>Wolfenstein 3D Game Engine</h3>
-                    <p>The Wolfenstein 3D Game Engine project is a custom-built 3D game engine inspired by the classic 1990s game Wolfenstein 3D, recreating its 3D projection using a 2D grid map and raycasting.</p>
-                    <ul class="project-skills">
-                        <li><strong>Java Programming (Processing):</strong> Developed the simulation with Java on Processing.</li>
-                        <li><strong>2D to 3D Projection Rendering:</strong> Implemented rendering techniques to achieve a 3D view from a 2D map, using ray casting.</li>
-                        <li><strong>Randomized Map Generation:</strong> Created a randomized map generator that builds a unique environment.</li>
-                    </ul> 
-                </div>
-            </div>
-        
-            <div class="project alternate">
-                <div class="project-description">
-                    <h3>Conway's Game of Life Simulator</h3>
-                    <p>The Conway's Game of Life Simulator project is a recreates the iconic cellular automaton developed by John Horton Conway in the 1970s, offering an interactive exploration of this zero-player game. This simulator, built with Processing, allows users to observe how simple rules lead to complex behaviors and patterns across a grid. The program simulates "cells" that evolve across generations based on Conway's four basic rules, showcasing phenomena like oscillators, still lifes, and spaceships.</p>
-                    <ul class="project-skills">
-                        <li><strong>Java Programming (Processing):</strong> Developed the simulation with Java on Processing.</li>
-                        <li><strong>Cellular Automaton Simulation:</strong> Implemented Conway's four essential rules for cell survival, birth, and death, producing a dynamic grid that evolves autonomously.</li>
-                        <li><strong>Pattern Visualization:</strong> Created a user-friendly visualization to display grid states in real-time.</li>
-                    </ul>
-                </div>
-                <div class="project-video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/iY4u9Bsn460?si=86UYPEIPo_aP6R7O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
-        </section>
+      <section id="projects">
+        <div class="project">
+          <div class="project-video">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/rdSWH_XKPg8?si=Dx66vgg8eQUqXsG8"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="project-description">
+            <h3>Doom Game Engine in Java</h3>
+            <p>
+              The Doom Game Engine in Java project is a custom-built, Java-based
+              game engine that I developed, inspired by the original Doom games.
+              This engine recreates the retro 3D experience through essential
+              game engine functionalities, including 2D and 3D rendering, Binary
+              Space Partitioning (BSP) for optimized scene management, and basic
+              player movement within a simulated 3D space from the 2D map. Built
+              using JDK 21. Future expansions for the project could include
+              features such as a map editor, AI-driven monsters, and a save/load
+              functionality to enhance user experience. This project exemplifies
+              core game development principles, from rendering to spatial
+              partitioning, that I designed from the ground up.
+            </p>
+            <ul class="project-skills">
+              <li>
+                <strong>Java Programming (JDK 21 / OOP):</strong> Utilized to
+                build the entire engine and manage game logic.
+              </li>
+              <li>
+                <strong>2D and 3D Rendering:</strong> Implemented custom
+                rendering techniques to emulate retro 3D visuals.
+              </li>
+              <li>
+                <strong>Binary Space Partitioning (BSP):</strong> Applied for
+                efficient scene management and spatial optimization.
+              </li>
+              <li>
+                <strong>Game Physics and Movement:</strong> Developed basic
+                player movement within a 3D-like environment from a 2D map.
+              </li>
+              <li>
+                <strong>Data Structures and Algorithms:</strong> Leveraged for
+                optimal rendering performance.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="project alternate">
+          <div class="project-description">
+            <h3>Blockudoku-AI</h3>
+            <p>
+              The Blockudoku-AI project is replication of the popular Blockudoku
+              mobile game with a little twist, featuring an AI-driven player
+              that makes strategic moves based on custom scoring rules. I
+              recreated the Blockudoku game in Java and developed a rule-based
+              AI to play the game autonomously. This AI isn't trained using
+              machine learning but instead evaluates each possible move based on
+              carefully designed scoring criteria, such as piece adjacency,
+              connectivity to other pieces or walls, and alignment with
+              horizontal, vertical, or 3x3 grid patterns. Built with Processing,
+              this project demonstrates skills in game development, rule-based
+              AI design, and algorithmic scoring. Future updates may include
+              enhanced rule complexity and adaptive scoring for improved AI
+              performance.
+            </p>
+            <ul class="project-skills">
+              <li>
+                <strong>Java Programming (Processing):</strong> Developed the
+                simulation with Java on Processing.
+              </li>
+              <li>
+                <strong>Rule-Based AI System:</strong> Designed an AI that
+                evaluates each move based on pre-defined scoring rules, allowing
+                it to play autonomously.
+              </li>
+              <li>
+                <strong>Algorithmic Scoring and Decision-Making:</strong>
+                Applied scoring logic that considers piece connectivity, grid
+                alignment, and optimal move selection.
+              </li>
+              <li>
+                <strong>Game Development:</strong> Built the Blockudoku game
+                mechanics, ensuring an authentic replication of the mobile
+                experience.
+              </li>
+            </ul>
+          </div>
+          <div class="project-video">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/JfBY5MMdbb4?si=jRM8AQQxNYS4drdR"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="project-video">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/75ZgIOZ5zE4?si=iEwqQlAYV1r3nP0f"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="project-description">
+            <h3>Wolfenstein 3D Game Engine</h3>
+            <p>
+              The Wolfenstein 3D Game Engine project is a custom-built 3D game
+              engine inspired by the classic 1990s game Wolfenstein 3D,
+              recreating its 3D projection using a 2D grid map and raycasting.
+            </p>
+            <ul class="project-skills">
+              <li>
+                <strong>Java Programming (Processing):</strong> Developed the
+                simulation with Java on Processing.
+              </li>
+              <li>
+                <strong>2D to 3D Projection Rendering:</strong> Implemented
+                rendering techniques to achieve a 3D view from a 2D map, using
+                ray casting.
+              </li>
+              <li>
+                <strong>Randomized Map Generation:</strong> Created a randomized
+                map generator that builds a unique environment.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="project alternate">
+          <div class="project-description">
+            <h3>Conway's Game of Life Simulator</h3>
+            <p>
+              The Conway's Game of Life Simulator project is a recreates the
+              iconic cellular automaton developed by John Horton Conway in the
+              1970s, offering an interactive exploration of this zero-player
+              game. This simulator, built with Processing, allows users to
+              observe how simple rules lead to complex behaviors and patterns
+              across a grid. The program simulates "cells" that evolve across
+              generations based on Conway's four basic rules, showcasing
+              phenomena like oscillators, still lifes, and spaceships.
+            </p>
+            <ul class="project-skills">
+              <li>
+                <strong>Java Programming (Processing):</strong> Developed the
+                simulation with Java on Processing.
+              </li>
+              <li>
+                <strong>Cellular Automaton Simulation:</strong> Implemented
+                Conway's four essential rules for cell survival, birth, and
+                death, producing a dynamic grid that evolves autonomously.
+              </li>
+              <li>
+                <strong>Pattern Visualization:</strong> Created a user-friendly
+                visualization to display grid states in real-time.
+              </li>
+            </ul>
+          </div>
+          <div class="project-video">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/iY4u9Bsn460?si=86UYPEIPo_aP6R7O"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <div class="footer-content">
-            <h3>Contact Information</h3>
-            <ul class="contact-list">
-                <li>
-                    <a href="https://www.linkedin.com/in/r%C3%A9mi-del-medico-a1a485228/" target="_blank" class="button-link">
-                        <i class="fab fa-linkedin"></i> LinkedIn
-                    </a>
-                </li>
-                <li>
-                    <a href="mailto:redelmedico@gmail.com" class="button-link">
-                        <i class="fas fa-envelope"></i> Email
-                    </a>
-                    <span class="email-text">redelmedico@gmail.com</span>
-                </li>
-                <li>
-                    <a href="https://github.com/RDel-Medico" target="_blank" class="button-link">
-                        <i class="fab fa-github"></i> GitHub
-                    </a>
-                </li>
-            </ul>
-        </div>
+      <div class="footer-content">
+        <h3>Contact Information</h3>
+        <ul class="contact-list">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/r%C3%A9mi-del-medico-a1a485228/"
+              target="_blank"
+              class="button-link"
+            >
+              <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+          </li>
+          <li>
+            <a href="mailto:redelmedico@gmail.com" class="button-link">
+              <i class="fas fa-envelope"></i> Email
+            </a>
+            <span class="email-text">redelmedico@gmail.com</span>
+          </li>
+          <li>
+            <a
+              href="https://github.com/RDel-Medico"
+              target="_blank"
+              class="button-link"
+            >
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </li>
+        </ul>
+      </div>
     </footer>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
